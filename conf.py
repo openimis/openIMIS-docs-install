@@ -22,7 +22,7 @@ sys.path.insert(0, abspath(join(dirname(__file__))))
 # -- Project information -----------------------------------------------------
 
 project = u'openIMIS'
-subproject= u'Install Manual'
+subproject= u'Install'
 copyright = u'2018, openIMIS team'
 author = u'openIMIS team'
 html_logo = 'img/logo.png'

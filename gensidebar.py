@@ -38,8 +38,8 @@ def generate_sidebar(conf, conf_api):
 
     def write(project, desc, link):
         if project == conf["subproject"] :
-            args = desc, link
-        elif not do_gen:
+#            args = desc, link
+#        elif not do_gen:
             return
         else:
             if project == "main":
