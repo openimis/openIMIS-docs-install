@@ -1,4 +1,4 @@
-.. include:: /_sidebar.rst.inc
+
 
 
 Install SQL Server

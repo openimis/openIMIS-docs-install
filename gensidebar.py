@@ -42,21 +42,15 @@ def generate_sidebar(conf, conf_api):
         elif not do_gen:
             return
         else:
-            if link != "index":
-                args = (
-                    desc,
-                    "http://docs.openimis.org/projects/en/%s/%s.html" % (version, link),
-                )
-            else:
-                args = (
-                    desc,
-                    "http://docs.openimis.org/projects/en/%s/" % (version),
-                )
+            args = (
+                desc,
+                "http://docs.openimis.org/projects/en/%s/%s.html" % (version, link),
+            )
 
         lines.append("    %s <%s>" % args)
 
     def writeProject(desc, link):
-        if desc != conf["subproject"] :
+        if desc == conf["subproject"] :
             args = desc, link
         elif not do_gen:
             return

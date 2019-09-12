@@ -5,3 +5,4 @@
     :caption: OpenIMIS
     :maxdepth: 2
 
+    Install Manual <Install>
