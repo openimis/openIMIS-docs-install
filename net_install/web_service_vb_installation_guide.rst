@@ -1,3 +1,4 @@
+.. include:: /_sidebar.rst.inc
 
 Web service installation guide
 ==================================
@@ -20,8 +21,6 @@ Download and unzip the release from Github web_service_vb repository
 (https://github.com/openimis/web_service_vb/releases/latest) in a new folder (openIMIS.WS.X.Y.Z)
 under the IIS wwwroot (usually in C:\\inetpub\\wwwroot).
 
-
-.. include:: _sidebar.rst.inc
 
 Configure openIMIS Web Services in IIS
 --------------------------------------

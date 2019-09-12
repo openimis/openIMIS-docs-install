@@ -1,5 +1,5 @@
 
-.. include:: _sidebar.rst.inc
+.. include:: /_sidebar.rst.inc
 
 Database installation guide
 ===========================

@@ -1,5 +1,4 @@
-
-.. include:: _sidebar.rst.inc
+.. include:: /_sidebar.rst.inc
 
 Web application installation guide
 ==================================

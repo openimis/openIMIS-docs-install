@@ -1,4 +1,4 @@
-.. include:: _sidebar.rst.inc
+.. include:: /_sidebar.rst.inc
 
 Windows services installation guide
 ===================================
