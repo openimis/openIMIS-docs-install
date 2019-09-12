@@ -73,4 +73,4 @@ def generate_sidebar(conf, conf_api):
     writeProject("Install Manual", "install")
     endl()
 
-    write_if_changed("_sidebar.rst.inc", "\n".join(lines))
+    #write_if_changed("_sidebar.rst.inc", "\n".join(lines))
