@@ -37,7 +37,7 @@ def generate_sidebar(conf, conf_api):
         lines.append("")
 
     def write(desc, link):
-        if desc == conf["subproject"] :
+        if desc != conf["subproject"] :
             args = desc, link
         elif not do_gen:
             return
