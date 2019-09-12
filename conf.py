@@ -192,8 +192,8 @@ rtd_version = os.environ.get('READTHEDOCS_VERSION', 'latest')
 if rtd_version not in ['stable', 'latest']:
     rtd_version = 'stable'
 intersphinx_mapping = {
-  'user': ('http://openimis.readthedocs.io/en/%s/' % rtd_version, None),
-  'install': ('http://openimis-install.readthedocs.io/en/%s/' % rtd_version, None),
+  'User manual': ('http://openimis.readthedocs.io/en/%s/' % rtd_version, None),
+  'Install Manual': ('http://openimis.readthedocs.io/Projects/install/en/%s/' % rtd_version, None),
 }
 
 

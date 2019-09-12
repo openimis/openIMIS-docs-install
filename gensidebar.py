@@ -42,10 +42,16 @@ def generate_sidebar(conf, conf_api):
         elif not do_gen:
             return
         else:
-            args = (
-                desc,
-                "https://openimis.readthedocs.io/en/%s/%s.html" % (version, link),
-            )
+            if link == "index":
+                args = (
+                    desc,
+                    "https://openimis.readthedocs.io/en/%s/%s.html" % (version, link),
+                )
+            else:
+                args = (
+                    desc,
+                    "https://openimis.readthedocs.io/en/%s/" % (version),
+                )
 
         lines.append("    %s <%s>" % args)
 
@@ -57,7 +63,7 @@ def generate_sidebar(conf, conf_api):
         else:
             args = (
                 desc,
-                "https://openimis.readthedocs.io/Projects/%s/%s/index.html" % (link, version),
+                "https://openimis.readthedocs.io/Projects/%s/%s/" % (link, version),
             )
 
         lines.append("    %s <%s>" % args)
