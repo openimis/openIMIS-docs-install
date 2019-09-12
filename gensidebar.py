@@ -45,12 +45,12 @@ def generate_sidebar(conf, conf_api):
             if link != "index":
                 args = (
                     desc,
-                    "https://openimis.readthedocs.io/en/%s/%s.html" % (version, link),
+                    "http://docs.openimis.org/projects/en/%s/%s.html" % (version, link),
                 )
             else:
                 args = (
                     desc,
-                    "https://openimis.readthedocs.io/en/%s/" % (version),
+                    "http://docs.openimis.org/projects/en/%s/" % (version),
                 )
 
         lines.append("    %s <%s>" % args)
@@ -63,14 +63,14 @@ def generate_sidebar(conf, conf_api):
         else:
             args = (
                 desc,
-                "https://openimis.readthedocs.io/Projects/%s/%s/" % (link, version),
+                "http://docs.openimis.org/projects/en/%s/%s/" % (link, version),
             )
 
         lines.append("    %s <%s>" % args)
 
     toctree("OpenIMIS")
     write("User manual", "index")
-    writeProject("Install Manual", "install")
+    writeProject("Install Manual", "Install")
     endl()
 
-    #write_if_changed("_sidebar.rst.inc", "\n".join(lines))
+    write_if_changed("_sidebar.rst.inc", "\n".join(lines))
