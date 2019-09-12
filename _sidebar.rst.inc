@@ -5,4 +5,3 @@
     :caption: OpenIMIS
     :maxdepth: 2
 
-    User manual <index>
