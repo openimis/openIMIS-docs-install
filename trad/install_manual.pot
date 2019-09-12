@@ -1,0 +1,785 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, openIMIS team
+# This file is distributed under the same license as the openIMIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openIMIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-16 15:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../install_manual/database_sql_server_installation_guide.rst:3
+msgid "Database installation guide"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:5
+msgid "**v1.3.0**"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:8
+msgid "Install SQL Server"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:10
+msgid "Note: This installation guide is based on SQL Server 2017."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:12
+msgid "Download the desired version of SQL Server (for example, the Express version from https://www.microsoft.com/en-us/sql-server/sql-server-downloads)."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:14
+msgid "When the installation wizard opens, select the manual configuration option in order to fine tune the installation process."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:16
+msgid "On the Features selection:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:18
+msgid "In Shared Feature section, select SQL Client Connectivity SDK"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:19
+msgid "For installations with Data Warehouse, select Analysis Services, Reporting Services and Integration Services (not available for the Express edition)"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:21
+msgid "On the Instance configuration, the default name (SQLEXPRESS) can be used, unless it is already used by another instance."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:23
+msgid "On Database engine configuration, select Mixed Mode (SQL Server authentication and Windows authentication) in Authentication Mode."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:25
+msgid "Continue the setup process until the installation is complete."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:28
+msgid "Configure SQL Server"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:30
+msgid "Open the SQL Server Configuration Manager"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:32
+msgid "On the left panel, select SQL Server Network Configuration → Protocols for SQLEXPRESS (or the name of your SQL Server instance) → Enable Named Pipes and TCP/IP"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:34
+msgid "Select SQL Server Services → right click on SQL server (instance name) and select Restart"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:37
+msgid "Initialise openIMIS database"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:39
+msgid "To facilitate the setting up of the openIMIS database, it is suggested to install `SQL Server Management Studio <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms>`_ (SSMS). The following procedure is based on SSMS, but you can use the standard SQL Server prompt to proceed with the setup."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:41
+msgid "First, download the openIMIS database SQL files and migration scripts from Github repository (the source code ZIP file)."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:43
+msgid "In SQL Server Management Studio:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:45
+msgid "Create a new database for the openIMIS instance (i.e. openIMIS.X.Y.Z where X.Y.Z is the openIMIS database version)."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:47
+msgid "Execute the initial database creation script provided in the release sources (from the ``Empty databases`` folder)."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:49
+msgid "Choose the database to restore based on your context. There are 3 types of databases (structurally identical, but they are pre-configured differently):"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:51
+msgid "Online: this is the default choice when deploying a central online server"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:52
+msgid "Offline: this mode is sometime used for remote insurance offices without connectivity. Note: the synchronisation of data with the central server is manual."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:53
+msgid "Offline HF: this database can be used in remote health facilities without connectivity. Note: the synchronisation of data with the central server is manual."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:55
+msgid "Restauration can be done in SQL Server Management Studio"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:57
+msgid "or the below command line can be used in a shell"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:62
+#: ../install_manual/database_sql_server_installation_guide.rst:143
+msgid "Becareful to addapt the querries to your setup, in the command lines example those assumptions were made:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:60
+msgid "``Online`` database version 1.20 is to be restored"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:61
+#: ../install_manual/database_sql_server_installation_guide.rst:98
+#: ../install_manual/database_sql_server_installation_guide.rst:145
+msgid "The database is called ``IMIS_DATABASENAME``"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:62
+#: ../install_manual/database_sql_server_installation_guide.rst:99
+#: ../install_manual/database_sql_server_installation_guide.rst:146
+msgid "The SQL server is called ``SQL_Server_Name``"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:69
+msgid "In case the database need to be restored on a server that doesn't have the same file structur as the initial server (e.g. from Windows to Linux), the new location of the mlf/mlf files can be specified"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:91
+msgid "Execute the SETUP-IMIS stored procedure"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:78
+msgid "In SQL Server Management Studio"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:80
+msgid "In the Object Explorer: openIMIS (the openIMIS db name) → Programmability → Stored Procedures → dbo.SETUP-IMIS"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:82
+msgid "Right click on the dbo.SETUP-IMIS and execute the procedure."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:84
+#: ../install_manual/database_sql_server_installation_guide.rst:141
+msgid "or run this command in a shell"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:91
+msgid "The result returned from the procedure should be 0."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:93
+msgid "If you prefer to initialize the database using the shell:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:95
+msgid "Be careful to adapt the queries to your setup, in the command lines example those assumptions were made:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:97
+msgid "``Online`` database is to be initialized"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:107
+msgid "Create a dedicated user with full privilege on the openIMIS database only:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:109
+msgid "In the Security → Logins → right click and select “New Login…”"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:110
+msgid "In General page:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:112
+msgid "Give a login name (i.e. ImisUser)"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:113
+msgid "Select SQL Server authentication and provide a password"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:114
+msgid "Unselect Enforce password expiration"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:115
+msgid "Change default database to openIMIS"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:117
+msgid "In User Mapping page:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:119
+msgid "Map IMIS db to ImisUser user"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:120
+msgid "Give the role of db_owner"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:123
+msgid "Upgrade the openIMIS database"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:125
+msgid "Before updating the database make sure the database is not reachable (off line) for the applications (web, mobile,...)."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:127
+msgid "If you want to update a production instance:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:129
+msgid "Please duplicate the database (create a full backup of the database)"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:130
+msgid "Execute the steps below on the copy of the database"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:131
+msgid "If the migration script succeeded on the copy, then you can apply the migration script to the production instance."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:133
+msgid "This approach will prevent impacting the production if the migration script failed because of customizations in your openIMIS instance and it will give you an idea of the time required to update the database."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:135
+msgid "If an existing openIMIS database exists already, follow the next steps to upgrade it to the desired version:"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:137
+msgid "Do a backup of the database"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:139
+msgid "Use the backup tools available in SQL Server Management Studio"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:154
+msgid "Download the openIMIS database SQL files and migration scripts from `Github repository <https://github.com/openimis/database_ms_sqlserver/releases/latest>`_ (the source code ZIP file)."
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:156
+msgid "In SQL Server Management Studio, run the migration script on the openIMIS database"
+msgstr ""
+
+#: ../install_manual/database_sql_server_installation_guide.rst:159
+msgid "or using the shell:"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:3
+msgid "Minimum requirements"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:5
+#: ../install_manual/mobile_applications_configuration.rst:5
+#: ../install_manual/web_app_vb_installation_guide.rst:5
+#: ../install_manual/web_service_vb_installation_guide.rst:5
+#: ../install_manual/windows_services_installation_guide.rst:6
+msgid "**v1.2.0 and later**"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:7
+msgid "Windows Server 2012 R2"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:9
+msgid "4 CPUs"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:11
+msgid "8GB RAM"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:13
+msgid "300GB Hard drive"
+msgstr ""
+
+#: ../install_manual/minimum_requirements.rst:15
+msgid "Administrator privileges"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:3
+msgid "Mobile application configuration guide"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:7
+msgid "Mobile apps need to be re-compiled with the correct server's IP address for it to be functional."
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:10
+msgid "To do so:"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:12
+msgid "Open Android Studio"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:14
+msgid "Open the mobile app project you want to configure (available on `openIMIS github <https://github.com/openimis>`__)"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:17
+msgid "For the Claim and Enquiry apps, locate the file called General.java in the project explorer"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:19
+msgid "For the IMIS app, locate the class AppInformation in the project explorer: App\\\\src\\\\main\\\\java\\\\tz\\\\co\\\\exact\\\\imis\\\\AppInformation.java"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:21
+msgid "Edit the class by replacing the server's IP address or server name, and save"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:24
+msgid "Build the app via the tools menu"
+msgstr ""
+
+#: ../install_manual/mobile_applications_configuration.rst:26
+msgid "The new .apk file is now available in the release folder indicated by Android Studio"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:3
+msgid "Web application installation guide"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:8
+msgid "Install IIS"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:10
+msgid "Follow these steps to install IIS:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:12
+msgid "In the Server manager → Dashboard → Add Roles and Features"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:13
+msgid "Select Role-based or feature-based installation"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:14
+msgid "Select your server from the server pool, and select your server from the list"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:15
+msgid "In Server Roles → select Web Server (IIS) → Add Features"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:16
+msgid "In Features"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:18
+msgid "Select .NET Framework 3.5"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:20
+msgid "Select .NET Framework 4.6 and ASP.NET 4.6"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:22
+msgid "In Web Server Role (IIS) → Role Services"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:24
+msgid "In Web Server, ensure that Common HTTP Features → Static Content is ticked"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:26
+msgid "In Application Development, select .NET Extensibility, ASP, ASP.NET, ISAPI Extensions, ISAPI Filters and Websocket Protocol"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:28
+msgid "Management tools → Tick all boxes"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:30
+msgid "Click on Install and wait for the features to be installed."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:31
+msgid "Restart the server if required"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:34
+msgid "Copy openIMIS Web Application"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:36
+msgid "Download and unzip the release from Github web_app_vb repository (https://github.com/openimis/web_app_vb/releases/latest) into a new folder under the IIS wwwroot (For example C:\\\\inetpub\\\\wwwroot\\\\openIMIS)."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:41
+msgid "Configure IIS"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:43
+msgid "The configuration of IIS done through Internet Information Service (IIS) Manager."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:46
+msgid "Add a site"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:48
+msgid "In Internet Information Service (IIS) manager:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:50
+msgid "Select your server name → Sites"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:51
+msgid "Remove the Default Web Site (if new installation)"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:52
+msgid "Right click on Sites → Add Website"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:53
+msgid "Enter a site name for your openIMIS instance (i.e. openIMIS.X.Y.Z)"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:54
+msgid "Enter or select the physical path name: C:\\\\inetpub\\\\wwwroot\\\\openIMIS (unless you have installed IIS somewhere else)"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:55
+msgid "If you have a SSL certificate, select binding type to HTTPS (port 443) and select your certificate, if not select binding type to HTTP (port 80)"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:57
+msgid "If you have selected the binding type to HTTPS (port 443), then you will have to add also the binding type for HTTP:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:59
+msgid "Right click on the new added website"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:60
+msgid "Select Edit Bindings"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:61
+msgid "Select binding type http (port 80) and click ok"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:64
+msgid "Globalisation"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:66
+msgid "Depending on the server's initial configuration, the date format may differ from the expected DD/mm/YYYY. To force the date format, go to the openIMIS site, then select .NET Globalisation Under Culture, and select English (United Kingdom) (en-GB) as a culture."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:72
+msgid "Configure openIMIS Web Application"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:75
+msgid "Edit the web.config"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:77
+msgid "The web.config provides the configuration for openIMIS Web Application, including database connection string and necessary folders."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:79
+msgid "To configure the database connection string, go in openIMIS root folder (usually C:\\\\inetpub\\\\wwwroot\\\\openIMIS), locate the web.config file and edit “IMISConnectionString”, so that the connection string points to the database created in openIMIS database section with the right credentials. For example:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:88
+msgid "Other configuration settings can be found within the appSettings tag and should be modified with caution."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:91
+msgid "Assign permission to source folders"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:93
+msgid "In the source files (usually C:\\\\inetpub\\\\wwwroot\\\\openIMIS), IIS_IUSRS need to be given full control of the following folders:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:96
+msgid "Archive"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:97
+msgid "Extracts"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:98
+msgid "FromPhone"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:99
+msgid "Images"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:100
+msgid "Workspace"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:102
+msgid "Repeat the following steps for each folder listed above:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:104
+msgid "Right click on the folder and select properties"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:105
+msgid "Ensure that the folder is not read only"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:106
+msgid "Select the Security tab"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:107
+msgid "Click on Edit"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:108
+msgid "Select IIS_IUSRS and allow full control (in the below section)."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:109
+msgid "Then apply and click OK."
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:112
+msgid "Edit permissions to Windows event logs"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:114
+msgid "Click on the Windows Start menu of run “regedit” via the search box:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:116
+msgid "In the Registry Editor, select HKEY_LOCAL_MACHINE → System → CurrentControlSet → Services → Eventlog"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:117
+msgid "Right click on the EventLog Node, select Permission. Give full permissions to IIS_IUSRS, as described in the above paragraph (Assign permission to source folders)"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:118
+msgid "Now repeat the same steps for Eventlog → Security node, as it can be required depending on the server's environment"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:121
+msgid "Open the application"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:123
+msgid "Open your Internet browser and type the following URL in the browser address bar \\ http://localhost/"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:126
+msgid "You can connect with the admin default credentials:"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:128
+msgid "Login name: Admin"
+msgstr ""
+
+#: ../install_manual/web_app_vb_installation_guide.rst:129
+msgid "Password: Admin"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:3
+msgid "Web service installation guide"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:8
+msgid "Prerequisites"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:10
+msgid "In order to install openIMIS Web Services, you need first to install openIMIS Database and Web Application."
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:12
+msgid "If not yet installed please follow the steps from the database and web application installation guides."
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:17
+msgid "Copy openIMIS Web Services"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:19
+msgid "Download and unzip the release from Github web_service_vb repository (https://github.com/openimis/web_service_vb/releases/latest) in a new folder (openIMIS.WS.X.Y.Z) under the IIS wwwroot (usually in C:\\\\inetpub\\\\wwwroot)."
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:25
+msgid "Configure openIMIS Web Services in IIS"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:27
+msgid "In Internet Information Service (IIS) Manager, right click on the previous added IMIS site and select Add application. Fill in the form as follows:"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:30
+msgid "Alias: Services (mandatory for the mobile apps)"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:31
+msgid "Physical Path: The path of the Services Folder in the sources (usually C:\\\\inetpub\\\\wwwroot\\\\openIMIS.WS.X.Y.Z)"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:35
+msgid "Configure openIMIS Web services"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:37
+msgid "Edit the web.config:"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:39
+msgid "Similarly, the Web services needs that the database connection string to be updated"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:41
+msgid "In the services source files (usually C:\\\\inetpub\\\\wwwroot\\\\openIMIS.WS.X.Y.Z),"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:41
+msgid "locate the the file “web.config” and edit it accordingly. For example:"
+msgstr ""
+
+#: ../install_manual/web_service_vb_installation_guide.rst:51
+msgid "-Important note-: the name attribute must remain “CHF_CENTRALConnectionString”"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:4
+msgid "Windows services installation guide"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:9
+msgid "Install and configure openIMIS Policy Renewal service"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:11
+msgid "To install the Policy Renewal service, proceed as follow:"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:13
+msgid "Download and unzip the installation setup from https://github.com/openimis/policy_renewal_service_vb/releases/latest"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:14
+msgid "Double click on the setup file"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:15
+msgid "Select the installation path (for example C:\\\\Program Files\\\\openIMIS\\\\Windows Services), and click Next"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:16
+msgid "Then close after the installation completes"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:17
+msgid "The service should start automatically as indicated in the system tray. If not, browse to Programs menu and search for “IMIS Policy Renewal” (PolicyRenewalController.exe) and execute it."
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:30
+msgid "To configure the Policy Renewal service, right click on the service controller"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:20
+msgid "application in the system tray, select Settings, and fill in the settings as follows for example:"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:23
+msgid "Server: TPH-L14005\\\\SQLEXPRESS (server instance name)"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:24
+msgid "Database: IMIS (IMIS database name)"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:25
+msgid "User Name: ImisUser"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:26
+msgid "Password: **************"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:27
+msgid "Time : 00:00"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:28
+msgid "Interval: 24"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:29
+msgid "Click on Apply. This will run a backup daily at midnight."
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:33
+msgid "Install and configure openIMIS Backup service"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:35
+msgid "Download and unzip the installation setup from https://github.com/openimis/imis_backup_service_vb/releases/latest"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:36
+#: ../install_manual/windows_services_installation_guide.rst:43
+msgid "Follow the same steps as for the Policy Renewal service to configure the service."
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:40
+msgid "Install and configure openIMIS Feedback Prompt service"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:42
+msgid "Download and unzip the installation setup from https://github.com/openimis/imis_feedback_prompt_service_vb/releases/latest"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:47
+msgid "Troubleshooting Windows Services"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:49
+msgid "An error message may appear after the services started, saying that the service failed. In this case, restart it as a Local System service:"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:53
+msgid "Open the Windows Services manager"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:54
+msgid "Locate the service that failed"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:55
+msgid "Right click on it and select Properties → Log on tab"
+msgstr ""
+
+#: ../install_manual/windows_services_installation_guide.rst:56
+msgid "Select Local System account"
+msgstr ""
+
