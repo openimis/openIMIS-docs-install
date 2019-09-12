@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Deploy SSAS &mdash; openIMIS  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> openIMIS
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/minimum_requirements.html">Minimum requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/database_sql_server_installation_guide.html">Database installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/web_app_vb_installation_guide.html">Web application installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/web_service_vb_installation_guide.html">Web service installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/windows_services_installation_guide.html">Windows services installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/mobile_applications_configuration.html">Mobile application configuration guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">openIMIS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Deploy SSAS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/ar_install/ar_ssas_install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="deploy-ssas">
+<h1>Deploy SSAS<a class="headerlink" href="#deploy-ssas" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Open the SQL Server Management studio and restore the database <strong>IMIS_DW</strong>.</dt>
+<dd><p class="first last">Close the SQL server management studio</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Click the windows start button, search for the Deployment Wizard. Click the Deployment wizard icon(<a class="reference internal" href="#ssas-deploy"><span class="std std-ref">Image - SSAS deployment wizard, Launch wizard</span></a>).</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="ssas-deploy"></span><img alt="../_images/ssas_deploy.png" src="../_images/ssas_deploy.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Launch wizard</cite></span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Click next  to start the installation for SSAS(<a class="reference internal" href="#ssas-deploy-1"><span class="std std-ref">Image - SSAS deployment wizard, Start</span></a>).</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<span id="ssas-deploy-1"></span><img alt="../_images/ssas_deploy_1.png" src="../_images/ssas_deploy_1.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Start</cite></span></p>
+</div>
+</div></blockquote>
+</li>
+<li><dl class="first docutils">
+<dt>Click the browse button (three dots) and select the IMIS cubes database from the SSAS deployment package(<a class="reference internal" href="#ssas-deploy-2"><span class="std std-ref">Image - SSAS deployment wizard, Destination folder</span></a>).</dt>
+<dd><p class="first">Click next to continue with the installation.</p>
+<div class="last figure align-center" id="id3">
+<span id="ssas-deploy-2"></span><img alt="../_images/ssas_deploy_2.png" src="../_images/ssas_deploy_2.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Destination folder</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>If the database does not exist on the Analysis Server, the Analysis Service Deployment Wizard will automatically create the database IMIS Cubes otherwise the database will be overwritten !</dt>
+<dd><p class="first">Click next to continue (<a class="reference internal" href="#ssas-deploy-3"><span class="std std-ref">Image - SSAS deployment wizard, Deploy IMIS cubes</span></a>).</p>
+<div class="last figure align-center" id="id4">
+<span id="ssas-deploy-3"></span><img alt="../_images/ssas_deploy_3.png" src="../_images/ssas_deploy_3.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Deploy IMIS cubes</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Specify options for partitions, roles and members according to the requirements.</dt>
+<dd><p class="first">Click next to continue(<a class="reference internal" href="#ssas-deploy-4"><span class="std std-ref">Image - SSAS deployment wizard, Partitions &amp; Roles</span></a>).</p>
+<div class="last figure align-center" id="id5">
+<span id="ssas-deploy-4"></span><img alt="../_images/ssas_deploy_4.png" src="../_images/ssas_deploy_4.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Partitions &amp; Roles</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>On the providers select box, choose SQL server Native client.</dt>
+<dd><ul class="first simple">
+<li>On the left side of the connection manager select connection.</li>
+<li>Click the refresh button and select the instance name.</li>
+<li>On the Log on to the server panel, provide username and Password for the instance selected.</li>
+<li>Under the connect to a database panel select the IMIS_DW.</li>
+<li>Verify the connection by clicking the Test Connection button.</li>
+<li>Click OK to continue with the installation(<a class="reference internal" href="#ssas-deploy-5-sql"><span class="std std-ref">Image - SSAS deployment wizard, SQL server</span></a>).</li>
+</ul>
+<div class="last figure align-center" id="id6">
+<span id="ssas-deploy-5-sql"></span><img alt="../_images/ssas_deploy_5_sql.png" src="../_images/ssas_deploy_5_sql.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, SQL server</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>On the  Select Processing Options window, select the appropriate option.</dt>
+<dd><p class="first">Click next to continue with the deployment(<a class="reference internal" href="#ssas-deploy-6"><span class="std std-ref">Image - SSAS deployment wizard, Processing</span></a>).</p>
+<div class="last figure align-center" id="id7">
+<span id="ssas-deploy-6"></span><img alt="../_images/ssas_deploy_6.png" src="../_images/ssas_deploy_6.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Processing</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Confirm Deployment. If the deployment script is required, check the Create Deployment Script option and browse to the destination folder.</dt>
+<dd><p class="first">Click next to continue(<a class="reference internal" href="#ssas-deploy-7"><span class="std std-ref">Image - SSAS deployment wizard, Finish</span></a>).</p>
+<div class="last figure align-center" id="id8">
+<span id="ssas-deploy-7"></span><img alt="../_images/ssas_deploy_7.png" src="../_images/ssas_deploy_7.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSAS deployment wizard, Finish</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Deploying Database</dt>
+<dd><ul class="first simple">
+<li>Click next to continue(<a class="reference internal" href="#db-deploy"><span class="std std-ref">Image - Database deployment wizard, Run</span></a>).</li>
+</ul>
+<div class="figure align-center" id="id9">
+<span id="db-deploy"></span><img alt="../_images/db_deploy.png" src="../_images/db_deploy.png" />
+<p class="caption"><span class="caption-text"><cite>Image - Database deployment wizard, Run</cite></span></p>
+</div>
+<ul class="simple">
+<li>Click finish to complete the deployment(<a class="reference internal" href="#db-deploy-1"><span class="std std-ref">Image -  Database deployment wizard, Results</span></a>).</li>
+</ul>
+<div class="last figure align-center" id="id10">
+<span id="db-deploy-1"></span><img alt="../_images/db_deploy_1.png" src="../_images/db_deploy_1.png" />
+<p class="caption"><span class="caption-text"><cite>Image - Database deployment wizard, Results</cite></span></p>
+</div>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, openIMIS team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install SQL Server &mdash; openIMIS  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> openIMIS
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/minimum_requirements.html">Minimum requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/database_sql_server_installation_guide.html">Database installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/web_app_vb_installation_guide.html">Web application installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/web_service_vb_installation_guide.html">Web service installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/windows_services_installation_guide.html">Windows services installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/mobile_applications_configuration.html">Mobile application configuration guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">openIMIS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Install SQL Server</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/ar_install/ar_database_install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-sql-server">
+<h1>Install SQL Server<a class="headerlink" href="#install-sql-server" title="Permalink to this headline">¶</a></h1>
+<p>Note: This installation guide is based on SQL Server 2017.</p>
+<p>Download the desired version of SQL Server (for example, the Standard version from <a class="reference external" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">https://www.microsoft.com/en-us/sql-server/sql-server-downloads</a>). the Express version cannot be used because it lacks the data warehouse function used by AR IMIS</p>
+<p>Select the manual configuration option in order to fine tune the installation process.</p>
+<div class="section" id="sql-server-installation-home-page">
+<h2>SQL Server installation home page<a class="headerlink" href="#sql-server-installation-home-page" title="Permalink to this headline">¶</a></h2>
+<p>Click ‘New SQL Server stand-alone new installation or add feature to an existing installation’ (<a class="reference internal" href="#sql-standalone"><span class="std std-ref">SQL Server installation home page</span></a>)</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="sql-standalone"></span><img alt="../_images/SQL_Standalone.png" src="../_images/SQL_Standalone.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SQL Server installation home page</cite></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="license-terms">
+<h2>License Terms<a class="headerlink" href="#license-terms" title="Permalink to this headline">¶</a></h2>
+<p>Accept license terms, after read and submit to your lawyer for verification, click Next</p>
+</div>
+<div class="section" id="setup-role">
+<h2>Setup Role<a class="headerlink" href="#setup-role" title="Permalink to this headline">¶</a></h2>
+<p>Choose the first selection which does new installation of features (<a class="reference internal" href="#sql-roles"><span class="std std-ref">SQL Role page</span></a>)</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<span id="sql-roles"></span><img alt="../_images/SQL_roles.png" src="../_images/SQL_roles.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SQL Role page</cite></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="features-selection">
+<h2>Features selection<a class="headerlink" href="#features-selection" title="Permalink to this headline">¶</a></h2>
+<p>Select feature, that will give the capability to work with normal Database engine along SQL Server Data Tools (Analysis, Integration, Reporting services) (<a class="reference internal" href="#sql-features"><span class="std std-ref">SQL features page</span></a>)</p>
+<blockquote>
+<div><div class="figure align-center" id="id3">
+<span id="sql-features"></span><img alt="../_images/sql_features.png" src="../_images/sql_features.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SQL features page</cite></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="instance-configuration">
+<h2>Instance Configuration<a class="headerlink" href="#instance-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Choose named instance, to enable working on custom feature, the default name will be SQLSERVER</p>
+</div>
+<div class="section" id="server-configuration">
+<h2>Server Configuration<a class="headerlink" href="#server-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Configure service upon computer startup. Change SQL Server Agent to Automatic (<a class="reference internal" href="#sql-config"><span class="std std-ref">SQL Configuration page</span></a>)</p>
+<blockquote>
+<div><div class="figure align-center" id="id4">
+<span id="sql-config"></span><img alt="../_images/sql_config.png" src="../_images/sql_config.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SQL Configuration page</cite></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="database-configuration">
+<h2>Database Configuration<a class="headerlink" href="#database-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Authentication mode choose Mixed mode, where you will have two selection when login into the server, type the password and click ‘Add Current user’ button to add local administrator account of a computer, ‘Add’ mean you add activate directory user account (locally or connected) (<a class="reference internal" href="#sql-engine-config"><span class="std std-ref">SQL Engine Configuration page</span></a>)</p>
+<blockquote>
+<div><div class="figure align-center" id="id5">
+<span id="sql-engine-config"></span><img alt="../_images/sql_engine_config.png" src="../_images/sql_engine_config.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SQL Engine Configuration page</cite></span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="analysis-services-configuration">
+<h2>Analysis Services Configuration<a class="headerlink" href="#analysis-services-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Server Mode choose ‘Multidimensional and Data Mining Mode’ due to facts that;</p>
+</div>
+<div class="section" id="grant-data-access-permissions">
+<h2>Grant data access permissions<a class="headerlink" href="#grant-data-access-permissions" title="Permalink to this headline">¶</a></h2>
+<p>As previously noted, you will need to grant permissions on the Analysis Services instance. Each database object will have roles that provide a given level of permissions (read or read/write), and each role will have members consisting of Windows user identities.
+To set permissions, you can use SQL Server Management Studio. Under the <em>Database</em> → <em>Roles</em> folder, you can</p>
+<ul class="simple">
+<li>Create roles,</li>
+<li>Specify database permissions,</li>
+<li>Assign membership to Windows user or group accounts,</li>
+<li>Grant read or write permissions on specific objects.</li>
+</ul>
+<p>Typically, Read permissions on a cube are sufficient for client connections that use, but do not update, model data. Role assignment varies depending on how you configured authentication.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, openIMIS team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

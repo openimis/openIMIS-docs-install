@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Execute SSIS &mdash; openIMIS  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> openIMIS
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/minimum_requirements.html">Minimum requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/database_sql_server_installation_guide.html">Database installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/web_app_vb_installation_guide.html">Web application installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/web_service_vb_installation_guide.html">Web service installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/windows_services_installation_guide.html">Windows services installation guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../net_install/mobile_applications_configuration.html">Mobile application configuration guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">openIMIS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Execute SSIS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/ar_install/ar_ssis_start.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="execute-ssis">
+<h1>Execute SSIS<a class="headerlink" href="#execute-ssis" title="Permalink to this headline">¶</a></h1>
+<p>Once both the SSIS and SSAS packages are deployed successfully, it’s time to start the ETL process. To start the ETL Process, follow the instructions below.</p>
+<ol class="arabic">
+<li><p class="first">Navigate to the folder where the SSIS package was installed. Find the file named “IMISDW” and double click the package to begin the process(<a class="reference internal" href="#ssis-run"><span class="std std-ref">Image -  Run SSIS</span></a>).</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="ssis-run"></span><img alt="../_images/ssis_run.png" src="../_images/ssis_run.png" />
+<p class="caption"><span class="caption-text"><cite>Image - Run SSIS</cite></span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">This process might take a while to finish depending on the data volume. Once the process is completed successfully, the SSAS package is now ready for the reporting(<a class="reference internal" href="#ssis-results"><span class="std std-ref">Image -  SSIS Results</span></a>).</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<span id="ssis-results"></span><img alt="../_images/ssis_results.png" src="../_images/ssis_results.png" />
+<p class="caption"><span class="caption-text"><cite>Image - SSIS Results</cite></span></p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, openIMIS team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
