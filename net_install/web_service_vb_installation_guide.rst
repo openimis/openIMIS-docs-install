@@ -21,6 +21,8 @@ Download and unzip the release from Github web_service_vb repository
 under the IIS wwwroot (usually in C:\\inetpub\\wwwroot).
 
 
+.. include:: _sidebar.rst.inc
+
 Configure openIMIS Web Services in IIS
 --------------------------------------
 

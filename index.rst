@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. include:: _sidebar.rst.inc
+
 openIMIS documentation
 ======================
 
@@ -32,8 +34,6 @@ Welcome to the openIMIS technical documentation repository.
    /ar_install/index
 
 
-
-   
 
 .. Contents
    ==================

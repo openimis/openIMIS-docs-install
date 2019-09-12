@@ -1,9 +1,9 @@
+.. include:: ../_sidebar.rst.inc
+
 Analytic and reporting installation guide
 =========================================
 
 **v1.2.0 and later**
-
-
 
 
 .. toctree::

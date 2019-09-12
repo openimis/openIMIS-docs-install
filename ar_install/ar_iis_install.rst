@@ -1,3 +1,5 @@
+.. include:: ../_sidebar.rst.inc
+
 Configure IIS
 ~~~~~~~~~~~~~
 

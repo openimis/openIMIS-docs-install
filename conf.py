@@ -16,7 +16,9 @@ import os
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from os.path import abspath, join, dirname
 
+sys.path.insert(0, abspath(join(dirname(__file__))))
 # -- Project information -----------------------------------------------------
 
 project = u'openIMIS'
@@ -179,3 +181,22 @@ texinfo_documents = [
 # Add custom CSS to resize the tables
 def setup(app):
     app.add_stylesheet('css/theme_overrides.css')
+
+#interlink mapping
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+# This is used for linking and such so we link to the thing we're building
+rtd_version = os.environ.get('READTHEDOCS_VERSION', 'latest')
+if rtd_version not in ['stable', 'latest']:
+    rtd_version = 'stable'
+intersphinx_mapping = {
+  'user': ('http://openimis.readthedocs.io/en/%s/' % rtd_version, None),
+  'install': ('http://openimis-install.readthedocs.io/en/%s/' % rtd_version, None),
+}
+
+
+## Gen menu
+import gensidebar
+
+gensidebar.generate_sidebar(globals(), "openIMIS")

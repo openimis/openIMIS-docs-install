@@ -1,4 +1,6 @@
 
+.. include:: _sidebar.rst.inc
+
 Minimum requirements
 ==================================
 
