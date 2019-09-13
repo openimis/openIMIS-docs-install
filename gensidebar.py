@@ -45,7 +45,7 @@ def generate_sidebar(conf, conf_api):
             if project == "main":
                 args = (
                     desc,
-                    "http://docs.openimis.org/projects/en/%s/%s.html" % (version, link),
+                    "http://docs.openimis.org/en/%s/%s.html" % (version, link),
                 )
             else:
                 args = (
