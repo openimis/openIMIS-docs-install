@@ -54,43 +54,7 @@ In SQL Server Management Studio:
         * Offline: this mode is sometime used for remote insurance offices without connectivity. Note: the synchronisation of data with the central server is manual.
         * Offline HF: this database can be used in remote health facilities without connectivity. Note: the synchronisation of data with the central server is manual.
 
-    Restauration can be done in SQL Server Management Studio 
 
-    or the below command line can be used in a shell
-
-        Becareful to addapt the querries to your setup, in the command lines example those assumptions were made:
-            * ``Online`` database version 1.30 is to be restored 
-            * The database is called ``IMIS_DATABASENAME`` 
-            * The SQL server is called ``SQL_Server_Name``
-
-        .. code-block:: dosbatch
-           :linenos:
-
-           SqlCmd -E -S SQL_Server_Name –Q "RESTORE DATABASE [IMIS_DATABASENAME] FROM DISK='X:\PathToBackupFile\openIMIS_ONLINE_v1.3.0.bak'"
-
-        In case the database need to be restored on a server that doesn't have the same file structur as the initial server (e.g. from Windows to Linux), the new location of the mlf/mlf files can be specified
-
-        .. code-block:: dosbatch
-           :linenos:
-
-           SqlCmd -E -S SQL_Server_Name -Q "RESTORE DATABASE [IMIS_DATABASENAME] FROM DISK=N'/tmp/openIMIS_ONLINE_v1.3.0.bak' WITH MOVE N'CH_CENTRAL' TO '/var/opt/mssql/data/IMIS.mdf', MOVE N'CH_CENTRAL_log' TO '/var/opt/mssql/data/IMIS_log.ldf'"
-
-
-- Execute the SETUP-IMIS stored procedure
-    In SQL Server Management Studio
-
-        * In the Object Explorer: openIMIS (the openIMIS db name) → Programmability → Stored Procedures → dbo.SETUP-IMIS
-
-        * Right click on the dbo.SETUP-IMIS and execute the procedure.
-
-    or run this command in a shell
-
-        .. code-block:: dosbatch
-           :linenos:
-
-           SqlCmd -E -S SQL_Server_Name -d IMIS_DATABASENAME -Q "EXECUTE [SETUP-IMIS]"
-
-    The result returned from the procedure should be 0.
 
 If you prefer to initialize the database using the shell:
 
