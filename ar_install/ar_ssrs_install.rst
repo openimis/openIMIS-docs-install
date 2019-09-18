@@ -61,7 +61,4 @@ Configure SSRS
 
         `Image - SSRS  Web GUI configuration service`
 
-Configure the ODBC
-==================
-
 
