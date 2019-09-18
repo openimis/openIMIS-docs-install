@@ -1,7 +1,10 @@
-
-
 Deploy SSIS
 ~~~~~~~~~~~
+
+#. download the AR IMIS package 
+
+   Go on the AR IMIS GitHub https://github.com/openimis/ar_imis_reporting_tool and click on download
+
 
 #. Once the IIS configuration has successfully completed, go to the SSIS deployment folder. Double click the IMISDW file(:ref:`Image - SSIS deployment folder <ssis_folder>`).
 

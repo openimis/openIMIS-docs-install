@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: _sidebar.rst.inc
+
 
 openIMIS documentation
 ======================
@@ -20,18 +20,8 @@ openIMIS documentation
 
 Welcome to the openIMIS technical documentation repository.
 
+ .. include:: _sidebar.rst.inc
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Installation documentation
-
-   /net_install/minimum_requirements
-   /net_install/database_sql_server_installation_guide
-   /net_install/web_app_vb_installation_guide
-   /net_install/web_service_vb_installation_guide
-   /net_install/windows_services_installation_guide
-   /net_install/mobile_applications_configuration
-   /ar_install/index
 
 
 

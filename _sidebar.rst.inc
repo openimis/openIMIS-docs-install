@@ -5,5 +5,53 @@
     :caption: OpenIMIS
     :maxdepth: 2
 
-    User manual <index>
-    Install Manual <Install>
+    open a ticket <https://openimis.atlassian.net/servicedesk/customer/portals>
+    openIMIS Wiki <https://openimis.atlassian.net/wiki/spaces/OP/overview>
+
+
+.. toctree::
+    :caption: User documentation
+    :maxdepth: 2
+
+    Users and logins <http://docs.openimis.org/en/latest//user_manual/user_login/user_login.html>
+    Claims <http://docs.openimis.org/en/latest//user_manual/claims/claims.html>
+    Administration of registers <http://docs.openimis.org/en/latest//user_manual/register/register.html>
+    Groups/Families, Insurees and Policies <http://docs.openimis.org/en/latest//user_manual/insuree_policies/insuree_policies.html>
+    Tools <http://docs.openimis.org/en/latest//user_manual/tools/tools.html>
+    Offline mode <http://docs.openimis.org/en/latest//user_manual/offline/offline.html>
+
+
+.. toctree::
+    :caption: AR IMIS user documentation
+    :maxdepth: 2
+
+    Concept <http://docs.openimis.org/en/latest//ar/user/concept.html>
+    Dimensions <http://docs.openimis.org/en/latest//ar/user/dimensions.html>
+    Facts <http://docs.openimis.org/en/latest//ar/user/facts.html>
+    Access Data <http://docs.openimis.org/en/latest//ar/user/access_data.html>
+
+
+.. toctree::
+    :caption: Installation documentation
+    :maxdepth: 2
+
+    /net_install/minimum_requirements
+    /net_install/database_sql_server_installation_guide
+    /net_install/web_app_vb_installation_guide
+    /net_install/web_service_vb_installation_guide
+    /net_install/windows_services_installation_guide
+    /net_install/mobile_applications_configuration
+
+
+.. toctree::
+    :caption: AR IMIS installation documentation
+    :maxdepth: 2
+
+    /ar_install/prerequisites
+    /ar_install/ar_database_install
+    /ar_install/ar_ssis_install
+    /ar_install/ar_ssas_install
+    /ar_install/ar_iis_install
+    /ar_install/ar_ssrs_install
+    /ar_install/ar_ssis_start
+
