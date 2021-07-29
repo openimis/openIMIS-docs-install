@@ -42,7 +42,7 @@ If you wish to initialize the database using SSMS, follow the steps:
 
 If you prefer to initialize the database using the shell, run the following command:
 
-```
+```bash
 $ SqlCmd -E –Q "CREATE DATABASE IMIS_DATABASENAME" 2SqlCmd -E -S SQL_Server_Name -d IMIS_DATABASENAME –i X:\PathToSQLFile\openIMIS_ONLINE.sql
 ```
 
@@ -87,7 +87,7 @@ During the upgrade make sure the is not reachable from the applications \(you sh
 
 Duplicate the openIMIS database using SSMS \(create a full backup of the database and restore it with another database name, e.g. openIMIS.1.4.0\) or shell \(see following command\).
 
-```
+```bash
 $ SqlCmd -E -S SQL_Server_Name –Q "BACKUP DATABASE [openIMIS.1.3.0] TO DISK='X:\PathToBackupLocation\openIMIS.1.3.0.bak'" 
 $ SqlCmd -E -S SQL_Server_Name –Q "RESTORE DATABASE [openIMIS.1.4.0] FROM DISK='X:\PathToBackupLocation\openIMIS.1.3.0.bak' WITH MOVE 'openIMIS.1.3.0' TO 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\openIMIS.1.4.0.mdf', MOVE 'openIMIS.1.3.0_log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\openIMIS.1.4.0_log.ldf'"
 ```
