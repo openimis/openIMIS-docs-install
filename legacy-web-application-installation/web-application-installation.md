@@ -30,7 +30,7 @@ Download and unzip the desired release from Github [web\_app\_vb repository](htt
 
 The configuration of IIS is done through Internet Information Service \(IIS\) Manager.
 
-### **Add a site**
+### **Add the openIMIS Site**
 
 In Internet Information Service \(IIS\) Manager:
 
@@ -50,7 +50,7 @@ If you have selected the binding type to HTTPS \(port 443\), then you will have 
 
 If you have a DNS address \(e.g. [demo.openimis.org](http://demo.openimis.org/)\) that is mapped to your server IP address, you can add it in the site binding configuration as the hostname. This will allow having multiple Sites deserving same ports \(80 and 443\) and can be used to have, for example, openIMIS development \(e.g. [dev.openimis.org](http://dev.openimis.org/)\) and production \(e.g. [demo.openimis.org](http://demo.openimis.org/)\) sites on the same server. 
 
-### **Globalisation**
+### **Change Globalisation**
 
 Depending on the server’s initial configuration, the date format may differ from the expected `DD/mm/YYYY` format. To force the date format, go to the openIMIS site, then select `Culture` → `.NET Globalisation`, and select `English (United Kingdom) (en-GB)` as a culture.
 
