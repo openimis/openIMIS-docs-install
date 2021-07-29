@@ -1,9 +1,5 @@
 # Web Application installation
 
-{% hint style="warning" %}
-Before installing the Web Application, you need to [install Microsoft SQL Server](database-installation.md) with the openIMIS database instantiated. 
-{% endhint %}
-
 ## **Video tutorial** 
 
 {% embed url="https://youtu.be/0CX3y6QfBXQ" %}
@@ -63,6 +59,10 @@ Depending on the server’s initial configuration, the date format may differ fr
 ### **Edit the web.config** 
 
 The web.config file provides the configuration for openIMIS Web Application, including database connection string and necessary folders.
+
+{% hint style="warning" %}
+For the Web Application to work, make sure the [openIMIS Database is installed](database-installation.md).  
+{% endhint %}
 
 To configure the database connection string, go in openIMIS root folder \(e.g. C:\inetpub\wwwroot\openIMIS.1.4.0\), locate the web.config file and edit `IMISConnectionString` entry so that the connection string points to the [database created in openIMIS database section](https://openimis.atlassian.net/wiki/spaces/OP/pages/906592471#WA2.1Databaseinstallation-create_db) with the right credentials. For example:
 

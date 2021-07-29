@@ -1,9 +1,5 @@
 # Windows Services installation
 
-## Video tutorial
-
-{% embed url="https://youtu.be/JdGRdtzpZ2w" %}
-
 ## Windows Services 
 
 The openIMIS Windows Services are helping with the periodic activities which are required by the implementations. 
@@ -12,13 +8,13 @@ The openIMIS Windows Services are helping with the periodic activities which are
 
 This Windows service periodically marks the policies that will expire in the near future to be renewed and updates the status of the already expired policies. 
 
-Download [Policy Renewal service](https://github.com/openimis/policy_renewal_service_vb/releases/latest).
+Download  [Policy Renewal service](https://github.com/openimis/policy_renewal_service_vb/releases/latest).
 
 ### Backup service 
 
 This Windows Service periodically creates a backup of the database.
 
-Download [Backup service](https://github.com/openimis/imis_backup_service_vb/releases/latest). 
+Download  [Backup service](https://github.com/openimis/imis_backup_service_vb/releases/latest). 
 
 ## Install Windows Services
 
