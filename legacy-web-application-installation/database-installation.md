@@ -1,5 +1,9 @@
 # Database installation
 
+## Video tutorial
+
+{% embed url="https://youtu.be/9og9OThVK6E" %}
+
 ## Install SQL Server
 
 {% hint style="info" %}
