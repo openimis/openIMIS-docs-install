@@ -4,13 +4,13 @@
 
 The openIMIS Windows Services are helping with the periodic activities which are required by the implementations. 
 
-### [Policy Renewal service](https://github.com/openimis/policy_renewal_service_vb/releases/latest)
+### Policy Renewal service
 
 This Windows service periodically marks the policies that will expire in the near future to be renewed and updates the status of the already expired policies. 
 
 Download  [Policy Renewal service](https://github.com/openimis/policy_renewal_service_vb/releases/latest).
 
-### [Backup service](https://github.com/openimis/imis_backup_service_vb/releases/latest) 
+### Backup service 
 
 This Windows Service periodically creates a backup of the database.
 
