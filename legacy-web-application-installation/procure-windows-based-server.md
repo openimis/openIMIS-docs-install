@@ -1,6 +1,10 @@
 # Procure Windows-based Server
 
-### Minimum requirements <a id="Minimum-requirements"></a>
+## Tutoriel vidéo 
+
+{% embed url="https://youtu.be/dmghtz1XZV8" %}
+
+## Minimum requirements
 
 The minimum requirement to install and use openIMIS in a production environment are: 
 
