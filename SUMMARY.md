@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Installation and Country Localisation](README.md)
+* [Installation et localisation](README.md)
 * [Legacy Web Application Installation](legacy-web-application-installation/README.md)
   * [Procure Windows-based Server](legacy-web-application-installation/procure-windows-based-server.md)
   * [Database installation](legacy-web-application-installation/database-installation.md)
