@@ -6,8 +6,6 @@ Before installing the Web Application, you need to [install Microsoft SQL Server
 
 ## **Install** Internet Information Services \(**IIS**\)
 
-
-
 In Windows Server, follow these steps to install IIS:
 
 1. In the `Server Manager` → `Dashboard` → `Add Roles and Features`
