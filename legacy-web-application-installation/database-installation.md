@@ -1,8 +1,12 @@
 # Database installation
 
+## Video tutorial
+
+{% embed url="https://youtu.be/9og9OThVK6E" %}
+
 ## Install SQL Server
 
-{% hint style="info" %}
+{% hint style="warning" %}
 openIMIS has been developed and tested using SQL Server 2017. Newer or old versions might require adaptations to both these installation guide and openIMIS code.
 {% endhint %}
 
@@ -38,7 +42,7 @@ First, download the openIMIS database SQL files and migration scripts from [Gith
 If you wish to initialize the database using SSMS, follow the steps: 
 
 1. Create a new database for the openIMIS instance \(e.g. openIMIS.1.4.0, where 1.4.0 is the openIMIS database version\).
-2. Open the [**openIMIS\_ONLINE.sql**](https://github.com/openimis/database_ms_sqlserver/blob/master/Empty%20databases/openIMIS_ONLINE.sql) file \(from the Empty databases folder\) and execute the script \(make sure the selected database is the one created in previous step\)
+2. Open the [openIMIS\_ONLINE.sql](https://github.com/openimis/database_ms_sqlserver/blob/master/Empty%20databases/openIMIS_ONLINE.sql) file \(from the Empty databases folder\) and execute the script \(make sure the selected database is the one created in previous step\)
 
 If you prefer to initialize the database using the shell, run the following command:
 
@@ -78,7 +82,7 @@ To initialize one of the specific openIMIS databases, follow the steps:
 ## Upgrade the openIMIS database
 
 {% hint style="danger" %}
-The upgrading process should always be performed first on a copy of the database to ensure the proper execution of the migration script. In case of any issue arriving from the upgrading process, you can get back to the previous version of the database. Please report using [openIMIS Service Desk](https://openimis.atlassian.net/servicedesk) any issue you may face in the upgrading process.
+The upgrading process should always be performed first on a copy of the database to ensure the proper execution of the migration script. In case of any issue arriving from the upgrading process, you can get back to the previous version of the database. Please report using [openIMIS Service Desk](https://openimis.atlassian.net/servicedesk/customer/portals) any issue you may face in the upgrading process.
 {% endhint %}
 
 The upgrade can be done with [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) \(SSMS\) or from the shell \(be careful to adapt the queries to your setup\).
