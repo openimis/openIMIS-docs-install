@@ -6,4 +6,5 @@
   * [Database installation](legacy-web-application-installation/database-installation.md)
   * [Web Application installation](legacy-web-application-installation/web-application-installation.md)
   * [Windows Services installation](legacy-web-application-installation/windows-services-installation.md)
+* [Web Application Localisation](web-application-localisation.md)
 

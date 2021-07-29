@@ -1,8 +1,8 @@
 # Web Application installation
 
-## **Video tutorial** 
-
-{% embed url="https://youtu.be/0CX3y6QfBXQ" %}
+{% hint style="warning" %}
+Before installing the Web Application, you need to [install Microsoft SQL Server](https://openimis.atlassian.net/wiki/spaces/OP/pages/906592471) with the openIMIS database instantiated. 
+{% endhint %}
 
 ## **Install** Internet Information Services \(**IIS**\)
 
@@ -30,7 +30,7 @@ Download and unzip the desired release from Github [web\_app\_vb repository](htt
 
 The configuration of IIS is done through Internet Information Service \(IIS\) Manager.
 
-### **Add the openIMIS Site**
+### **Add a site**
 
 In Internet Information Service \(IIS\) Manager:
 
@@ -50,7 +50,7 @@ If you have selected the binding type to HTTPS \(port 443\), then you will have 
 
 If you have a DNS address \(e.g. [demo.openimis.org](http://demo.openimis.org/)\) that is mapped to your server IP address, you can add it in the site binding configuration as the hostname. This will allow having multiple Sites deserving same ports \(80 and 443\) and can be used to have, for example, openIMIS development \(e.g. [dev.openimis.org](http://dev.openimis.org/)\) and production \(e.g. [demo.openimis.org](http://demo.openimis.org/)\) sites on the same server. 
 
-### **Change Globalisation**
+### **Globalisation**
 
 Depending on the server’s initial configuration, the date format may differ from the expected `DD/mm/YYYY` format. To force the date format, go to the openIMIS site, then select `Culture` → `.NET Globalisation`, and select `English (United Kingdom) (en-GB)` as a culture.
 
@@ -59,10 +59,6 @@ Depending on the server’s initial configuration, the date format may differ fr
 ### **Edit the web.config** 
 
 The web.config file provides the configuration for openIMIS Web Application, including database connection string and necessary folders.
-
-{% hint style="warning" %}
-For the Web Application to work, make sure the [openIMIS Database is installed](database-installation.md).  
-{% endhint %}
 
 To configure the database connection string, go in openIMIS root folder \(e.g. C:\inetpub\wwwroot\openIMIS.1.4.0\), locate the web.config file and edit `IMISConnectionString` entry so that the connection string points to the [database created in openIMIS database section](https://openimis.atlassian.net/wiki/spaces/OP/pages/906592471#WA2.1Databaseinstallation-create_db) with the right credentials. For example:
 
