@@ -1,8 +1,12 @@
 # Web Application installation
 
 {% hint style="warning" %}
-Before installing the Web Application, you need to [install Microsoft SQL Server](https://openimis.atlassian.net/wiki/spaces/OP/pages/906592471) with the openIMIS database instantiated. 
+Before installing the Web Application, you need to [install Microsoft SQL Server](database-installation.md) with the openIMIS database instantiated. 
 {% endhint %}
+
+## **Video tutorial** 
+
+{% embed url="https://youtu.be/0CX3y6QfBXQ" %}
 
 ## **Install** Internet Information Services \(**IIS**\)
 
