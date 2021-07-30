@@ -8,4 +8,5 @@
   * [Windows Services installation](legacy-web-application-installation/windows-services-installation.md)
 * [Web Application Localisation](web-application-localisation/README.md)
   * [Escape procedures](web-application-localisation/escape-procedures.md)
+  * [Multi-language support](web-application-localisation/multi-language-support.md)
 
