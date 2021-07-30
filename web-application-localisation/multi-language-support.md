@@ -4,7 +4,7 @@
 
 {% embed url="https://youtu.be/KiAjKdmL5Q4" %}
 
-## Language translations
+## Language translation
 
 Web Application .Net is supporting up to two languages. The language translation is done on the Web Application source code level \(this page\) and on the database level \(see [WA4.1 Language selection and translation tables](https://openimis.atlassian.net/wiki/spaces/OP/pages/906887227/WA4.1+Language+selection+and+translation+tables)\). 
 

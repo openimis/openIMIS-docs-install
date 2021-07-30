@@ -9,4 +9,5 @@
 * [Web Application Localisation](web-application-localisation/README.md)
   * [Escape procedures](web-application-localisation/escape-procedures.md)
   * [Multi-language support](web-application-localisation/multi-language-support.md)
+  * [Deploy the localized Web Application](web-application-localisation/deploy-the-localized-web-application.md)
 
